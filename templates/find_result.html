@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<!-- <a class="btn btn-success btn-lg" href="{{ url_for('index') }}">Welcome To Archiever! </a> -->
+
+      <div class="row">
+      <div class="alert alert-info">
+查询含有 <strong>2</strong> 间卧室， <strong>1</strong> 间客厅的建筑方案，命中结果 <strong>1</strong> 条。</div>
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">北京小营小区越廊式住宅方案-户型1</h2>
+            <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a>
+	            <span class="label label-default"> 越廊式住宅 </span>
+	            <span class="label label-default"> 北京 </span>
+	            <span class="label label-default"> 小户型 </span>
+	            <span class="label label-default"> 外廊式 </span>
+	        </p> 
+ <table class="table">
+    <thead>
+      <tr>
+        <th>户型总面积</th>
+        <th>卧室数量</th>
+        <th>起居室数量</th>
+        <th>起居室面积</th>
+        <th>客厅连续墙面长度</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>35.2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>18</td>
+        <td>5.8</td>
+      </tr>
+    </tbody>
+  </table>
+            <p> 
+这是一个跃廊错半层并隔层设置设计中较有特点的实例。面向走廊的居室
+后退，与公共通廊脱开一定距离，形成凹廊（半天井）。厨房、卫生间向凹槽
+开窗，直通室外，既解决高层板式住宅北外廊对套内干扰，也消除了厨房油烟
+对外走廊的侵袭。但平均每部楼梯的使用率减少，且楼梯安排不利于防火疏散，剩余空间的利用也尚需改进。
+ 
+<img src="/static/house1.png" alt="平面图" />
+</p>
+<a class="btn btn-default" href="#" role="button">查看详细信息</a>
+
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Another blog post</h2>
+            <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+
+            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+            <blockquote>
+              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </blockquote>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">New feature</h2>
+            <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <ul>
+              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+              <li>Donec id elit non mi porta gravida at eget metus.</li>
+              <li>Nulla vitae elit libero, a pharetra augue.</li>
+            </ul>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+          </div><!-- /.blog-post -->
+
+          <nav>
+            <ul class="pager">
+              <li><a href="#">Previous</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+      </div><!-- /.row -->
+
+{% endblock %}

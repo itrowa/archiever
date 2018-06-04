@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<!-- <a class="btn btn-success btn-lg" href="{{ url_for('index') }}">Welcome To Archiever! </a> -->
+<canvas id="c" width="300" height="300" style="border:1px solid #ccc"></canvas>
+<script>
+  (function() {
+
+    var canvas = new fabric.Canvas('c');
+    // create a rectangle object
+	var rect = new fabric.Rect({
+	  left: 100,
+	  top: 100,
+	  fill: 'red',
+	  width: 20,
+	  height: 20
+	});
+
+	// "add" rectangle onto canvas
+	canvas.add(rect);
+
+	var site_url = 'http://localhost:5000/plan/1/graph';
+	
+	fabric.loadSVGFromURL(site_url, function(objects) { 
+	          var group = new fabric.PathGroup(objects, { 
+	          left: 165, 
+	          top: 100, 
+	          width: 295, 
+	          height: 211 
+	        }); 
+	        canvas.add(group); 
+	        canvas.renderAll(); 
+	          }); 
+  })();
+</script>
+{% endblock %}

@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<!-- <a class="btn btn-success btn-lg" href="{{ url_for('index') }}">Welcome To Archiever! </a> -->
+{% import "bootstrap/wtf.html" as wtf %}
+
+<form class="form-inline form-horizontal" >
+<div class="row">
+	<div class="col-md-4">
+		<h3>居室数量： </h3>
+    <p>
+      请输入居室数量：
+  		{{ wtf.form_field(form.br_num) }}
+      {{ wtf.form_field(form.lr_num) }}
+      {{ wtf.form_field(form.tol_num) }}
+    </p>
+	</div>
+
+	<div class="col-md-4">
+		<h3>形态尺寸过滤 : </h3>
+    <p> 卧室开间范围：
+  		{{ wtf.form_field(form.br_width_min)}}
+  		{{ wtf.form_field(form.br_width_max)}} 
+    </p>
+    <p> 客厅开间范围：
+      {{ wtf.form_field(form.lr_width_min)}}
+      {{ wtf.form_field(form.lr_width_max)}} 
+    </p>
+    <p> 外廊长度范围：
+      {{ wtf.form_field(form.corridor_length_min) }}
+      {{ wtf.form_field(form.corridor_length_max) }}
+	</div>
+
+	<div class="col-md-4">
+		<h3> 附加标签 </h3>
+		<p>
+      包含对方案的主观描述信息
+      {{ wtf.form_field(form.tags)}} 
+    </p>
+	</div>
+
+</div>
+	{{ form.submit }}
+</form>
+
+<!-- <div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Option two can be something else and selecting it will deselect option one
+  </label>
+</div>
+<div class="radio disabled">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+    Option three is disabled
+  </label>
+</div>
+
+居室数量：
+<select class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+
+总面积：
+<select class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+至
+<select class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+
+居室开间：
+<select class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+至
+<select class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select> -->
+
+{% endblock %}

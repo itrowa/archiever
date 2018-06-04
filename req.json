@@ -1,0 +1,65 @@
+{
+	"req": {
+		"width": 6200,
+		"traffic": "Single-Loaded",
+		"type": "Single-Orientation"
+	},
+
+	"rooms":{
+		"Main Bedroom": {
+			"id": 1,
+			"square": 25,
+			"fun": "BR",
+			"adj": [3],
+			"direct-sunlight": true,
+		},
+		"Kitchen": {
+			"id": 2,
+			"square": 8,
+			"fun": "K",
+			"adj": [3],
+			"direct-sunlight": true,
+		},
+		"Living Room": {
+			"id": 3,
+			"square": 20,
+			"fun": "L",
+			"adj": [1, 6, 2, 7, 5, 4],
+			"direct-sunlight": true,
+		},
+		"Dining Room": {
+			"id": 4,
+			"square": 10,
+			"fun": "D",
+			"adj": [3],
+			"direct-sunlight": true,
+		},
+		"Bath Room": {
+			"id": 5,
+			"square": 3,
+			"fun": "BA",
+			"adj": [3],
+			"direct-sunlight": true,
+		},
+		"Entrance": {
+			"id": 6,
+			"square": 3,
+			"fun": "EH",
+			"adj": [3],
+			"direct-sunlight": false,
+		},
+		"Balcony": {
+			"id": 7,
+			"square": 4,
+			"fun": "BL",
+			"adj": [3],
+			"direct-sunlight": true,
+		},
+		"Equipment Shaft": {
+			"id": 8,
+			"square": 0.4,
+			"fun": "EQ",
+			"adj": [],
+			"direct-sunlight": false,
+		}
+}}
